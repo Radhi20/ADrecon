@@ -78,14 +78,3 @@ Each scan generates two files in `reports/`:
 
 ---
 
-## Legal & Ethics
-
-> For use in isolated lab environments only.
-> Do not run against production domains or systems you do not own.
-
----
-
-## Author
-
-**Hamouda Mohamed Radhi**  
-M1 Sécurité des Systèmes d'Information — USTHB, Algiers
