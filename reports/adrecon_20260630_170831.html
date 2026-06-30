@@ -1,0 +1,217 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<title>ADrecon Report — corp.local</title>
+<style>
+  @import url('https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&family=Inter:wght@300;400;500;600&display=swap');
+  :root {
+    --bg:#0d0f14; --surface:#13161d; --border:#1e2330;
+    --accent:#e8673a; --ok:#3dd68c; --text:#c8cdd8;
+    --text-hi:#eef0f5; --muted:#5a6070; --mono:'JetBrains Mono',monospace;
+    --sans:'Inter',sans-serif;
+  }
+  * { box-sizing:border-box; margin:0; padding:0; }
+  body { background:var(--bg); color:var(--text); font-family:var(--sans); font-size:14px; }
+  header { border-bottom:1px solid var(--border); padding:40px 60px 32px; display:flex; justify-content:space-between; align-items:flex-end; }
+  .logo { font-family:var(--mono); font-size:11px; letter-spacing:.15em; color:var(--accent); text-transform:uppercase; margin-bottom:8px; }
+  h1 { font-size:28px; font-weight:600; color:var(--text-hi); }
+  .meta { font-family:var(--mono); font-size:11px; color:var(--muted); text-align:right; line-height:1.8; }
+  .stats { display:grid; grid-template-columns:repeat(5,1fr); border-bottom:1px solid var(--border); }
+  .stat { padding:24px 32px; border-right:1px solid var(--border); }
+  .stat:last-child { border-right:none; }
+  .stat-value { font-family:var(--mono); font-size:32px; font-weight:700; color:var(--text-hi); }
+  .stat-value.danger { color:var(--accent); }
+  .stat-label { font-size:10px; text-transform:uppercase; letter-spacing:.1em; color:var(--muted); margin-top:4px; }
+  main { padding:40px 60px; }
+  h2 { font-size:16px; font-weight:600; color:var(--text-hi); margin:32px 0 16px; padding-bottom:8px; border-bottom:1px solid var(--border); }
+  .finding { display:flex; gap:16px; background:var(--surface); border:1px solid var(--border); border-radius:6px; padding:16px; margin-bottom:8px; }
+  .finding-sev { font-family:var(--mono); font-size:10px; font-weight:700; padding:4px 10px; border-radius:3px; color:#000; height:fit-content; white-space:nowrap; }
+  .finding-title { font-weight:600; color:var(--text-hi); margin-bottom:4px; }
+  .finding-desc { font-size:13px; color:var(--text); margin-bottom:4px; }
+  .finding-affected { font-family:var(--mono); font-size:11px; color:var(--muted); }
+  table { width:100%; border-collapse:collapse; background:var(--surface); border-radius:6px; overflow:hidden; }
+  th { background:var(--border); padding:10px 16px; text-align:left; font-size:11px; text-transform:uppercase; letter-spacing:.08em; color:var(--muted); }
+  td { padding:10px 16px; border-bottom:1px solid var(--border); font-size:13px; }
+  tr:last-child td { border-bottom:none; }
+  footer { border-top:1px solid var(--border); padding:24px 60px; font-family:var(--mono); font-size:11px; color:var(--muted); display:flex; justify-content:space-between; margin-top:40px; }
+</style>
+</head>
+<body>
+<header>
+  <div>
+    <div class="logo">ADrecon // Security Research</div>
+    <h1>Active Directory Audit Report</h1>
+  </div>
+  <div class="meta">
+    <div>Domain: corp.local</div>
+    <div>DC: 192.168.100.10</div>
+    <div>Generated: 2026-06-30 17:08:31</div>
+  </div>
+</header>
+<div class="stats">
+  <div class="stat"><div class="stat-value">18</div><div class="stat-label">Users</div></div>
+  <div class="stat"><div class="stat-value">100</div><div class="stat-label">Groups</div></div>
+  <div class="stat"><div class="stat-value">4</div><div class="stat-label">Computers</div></div>
+  <div class="stat"><div class="stat-value danger">18</div><div class="stat-label">Findings</div></div>
+  <div class="stat"><div class="stat-value danger">4</div><div class="stat-label">Kerberoastable</div></div>
+</div>
+<main>
+  <h2>Security Findings</h2>
+  
+        <div class="finding">
+          <div class="finding-sev" style="background:#e8673a">HIGH</div>
+          <div class="finding-content">
+            <div class="finding-title">Kerberoastable Account</div>
+            <div class="finding-desc">User 'DC01$' has SPNs set — vulnerable to Kerberoasting</div>
+            <div class="finding-affected">Affected: DC01$</div>
+          </div>
+        </div>
+        <div class="finding">
+          <div class="finding-sev" style="background:#e8673a">HIGH</div>
+          <div class="finding-content">
+            <div class="finding-title">Kerberoastable Account</div>
+            <div class="finding-desc">User 'DESKTOP-77CHFAO$' has SPNs set — vulnerable to Kerberoasting</div>
+            <div class="finding-affected">Affected: DESKTOP-77CHFAO$</div>
+          </div>
+        </div>
+        <div class="finding">
+          <div class="finding-sev" style="background:#f0c040">MEDIUM</div>
+          <div class="finding-content">
+            <div class="finding-title">Privileged Group: Administrateurs</div>
+            <div class="finding-desc">Group 'Administrateurs' has 3 member(s)</div>
+            <div class="finding-affected">Affected: Admins du domaine, Administrateurs de l’entreprise, Administrateur</div>
+          </div>
+        </div>
+        <div class="finding">
+          <div class="finding-sev" style="background:#f0c040">MEDIUM</div>
+          <div class="finding-content">
+            <div class="finding-title">Privileged Group: Administrateurs du schéma</div>
+            <div class="finding-desc">Group 'Administrateurs du schéma' has 1 member(s)</div>
+            <div class="finding-affected">Affected: Administrateur</div>
+          </div>
+        </div>
+        <div class="finding">
+          <div class="finding-sev" style="background:#f0c040">MEDIUM</div>
+          <div class="finding-content">
+            <div class="finding-title">Privileged Group: Administrateurs de l’entreprise</div>
+            <div class="finding-desc">Group 'Administrateurs de l’entreprise' has 1 member(s)</div>
+            <div class="finding-affected">Affected: Administrateur</div>
+          </div>
+        </div>
+        <div class="finding">
+          <div class="finding-sev" style="background:#f0c040">MEDIUM</div>
+          <div class="finding-content">
+            <div class="finding-title">Privileged Group: Admins du domaine</div>
+            <div class="finding-desc">Group 'Admins du domaine' has 2 member(s)</div>
+            <div class="finding-affected">Affected: Bob Admin, Administrateur</div>
+          </div>
+        </div>
+        <div class="finding">
+          <div class="finding-sev" style="background:#f0c040">MEDIUM</div>
+          <div class="finding-content">
+            <div class="finding-title">Weak Password Policy: Min Password Length</div>
+            <div class="finding-desc">Min Password Length is set to 7</div>
+            <div class="finding-affected">Affected: —</div>
+          </div>
+        </div>
+        <div class="finding">
+          <div class="finding-sev" style="background:#f0c040">MEDIUM</div>
+          <div class="finding-content">
+            <div class="finding-title">Weak Password Policy: Lockout Threshold</div>
+            <div class="finding-desc">Lockout Threshold is set to 0</div>
+            <div class="finding-affected">Affected: —</div>
+          </div>
+        </div>
+        <div class="finding">
+          <div class="finding-sev" style="background:#4a9eff">INFO</div>
+          <div class="finding-content">
+            <div class="finding-title">Admin Share Check</div>
+            <div class="finding-desc">Manual verification recommended with crackmapexec or smbclient</div>
+            <div class="finding-affected">Affected: —</div>
+          </div>
+        </div>
+        <div class="finding">
+          <div class="finding-sev" style="background:#e8673a">HIGH</div>
+          <div class="finding-content">
+            <div class="finding-title">Kerberoastable Account</div>
+            <div class="finding-desc">User 'DC01$' has SPNs set — vulnerable to Kerberoasting</div>
+            <div class="finding-affected">Affected: DC01$</div>
+          </div>
+        </div>
+        <div class="finding">
+          <div class="finding-sev" style="background:#e8673a">HIGH</div>
+          <div class="finding-content">
+            <div class="finding-title">Kerberoastable Account</div>
+            <div class="finding-desc">User 'DESKTOP-77CHFAO$' has SPNs set — vulnerable to Kerberoasting</div>
+            <div class="finding-affected">Affected: DESKTOP-77CHFAO$</div>
+          </div>
+        </div>
+        <div class="finding">
+          <div class="finding-sev" style="background:#f0c040">MEDIUM</div>
+          <div class="finding-content">
+            <div class="finding-title">Privileged Group: Administrateurs</div>
+            <div class="finding-desc">Group 'Administrateurs' has 3 member(s)</div>
+            <div class="finding-affected">Affected: Admins du domaine, Administrateurs de l’entreprise, Administrateur</div>
+          </div>
+        </div>
+        <div class="finding">
+          <div class="finding-sev" style="background:#f0c040">MEDIUM</div>
+          <div class="finding-content">
+            <div class="finding-title">Privileged Group: Administrateurs du schéma</div>
+            <div class="finding-desc">Group 'Administrateurs du schéma' has 1 member(s)</div>
+            <div class="finding-affected">Affected: Administrateur</div>
+          </div>
+        </div>
+        <div class="finding">
+          <div class="finding-sev" style="background:#f0c040">MEDIUM</div>
+          <div class="finding-content">
+            <div class="finding-title">Privileged Group: Administrateurs de l’entreprise</div>
+            <div class="finding-desc">Group 'Administrateurs de l’entreprise' has 1 member(s)</div>
+            <div class="finding-affected">Affected: Administrateur</div>
+          </div>
+        </div>
+        <div class="finding">
+          <div class="finding-sev" style="background:#f0c040">MEDIUM</div>
+          <div class="finding-content">
+            <div class="finding-title">Privileged Group: Admins du domaine</div>
+            <div class="finding-desc">Group 'Admins du domaine' has 2 member(s)</div>
+            <div class="finding-affected">Affected: Bob Admin, Administrateur</div>
+          </div>
+        </div>
+        <div class="finding">
+          <div class="finding-sev" style="background:#f0c040">MEDIUM</div>
+          <div class="finding-content">
+            <div class="finding-title">Weak Password Policy: Min Password Length</div>
+            <div class="finding-desc">Min Password Length is set to 7</div>
+            <div class="finding-affected">Affected: —</div>
+          </div>
+        </div>
+        <div class="finding">
+          <div class="finding-sev" style="background:#f0c040">MEDIUM</div>
+          <div class="finding-content">
+            <div class="finding-title">Weak Password Policy: Lockout Threshold</div>
+            <div class="finding-desc">Lockout Threshold is set to 0</div>
+            <div class="finding-affected">Affected: —</div>
+          </div>
+        </div>
+        <div class="finding">
+          <div class="finding-sev" style="background:#4a9eff">INFO</div>
+          <div class="finding-content">
+            <div class="finding-title">Admin Share Check</div>
+            <div class="finding-desc">Manual verification recommended with crackmapexec or smbclient</div>
+            <div class="finding-affected">Affected: —</div>
+          </div>
+        </div>
+  <h2>Users (18)</h2>
+  <table>
+    <thead><tr><th>Username</th><th>Display Name</th><th>UAC Flags</th><th>Admin</th><th>SPNs</th></tr></thead>
+    <tbody><tr><td>Administrateur</td><td></td><td>NO_EXPIRE</td><td>✓</td><td>0</td></tr><tr><td>Invité</td><td></td><td>DISABLED, NO_EXPIRE</td><td></td><td>0</td></tr><tr><td>DefaultAccount</td><td></td><td>DISABLED, NO_EXPIRE</td><td></td><td>0</td></tr><tr><td>DC01$</td><td></td><td>normal</td><td></td><td>20</td></tr><tr><td>krbtgt</td><td></td><td>DISABLED</td><td>✓</td><td>1</td></tr><tr><td>jsmith</td><td></td><td>normal</td><td></td><td>0</td></tr><tr><td>amartin</td><td></td><td>normal</td><td></td><td>0</td></tr><tr><td>badmin</td><td></td><td>normal</td><td>✓</td><td>0</td></tr><tr><td>DESKTOP-77CHFAO$</td><td></td><td>normal</td><td></td><td>4</td></tr><tr><td>Administrateur</td><td></td><td>NO_EXPIRE</td><td>✓</td><td>0</td></tr><tr><td>Invité</td><td></td><td>DISABLED, NO_EXPIRE</td><td></td><td>0</td></tr><tr><td>DefaultAccount</td><td></td><td>DISABLED, NO_EXPIRE</td><td></td><td>0</td></tr><tr><td>DC01$</td><td></td><td>normal</td><td></td><td>20</td></tr><tr><td>krbtgt</td><td></td><td>DISABLED</td><td>✓</td><td>1</td></tr><tr><td>jsmith</td><td></td><td>normal</td><td></td><td>0</td></tr><tr><td>amartin</td><td></td><td>normal</td><td></td><td>0</td></tr><tr><td>badmin</td><td></td><td>normal</td><td>✓</td><td>0</td></tr><tr><td>DESKTOP-77CHFAO$</td><td></td><td>normal</td><td></td><td>4</td></tr></tbody>
+  </table>
+</main>
+<footer>
+  <span>ADrecon — Active Directory Attack Chain Tool</span>
+  <span>Hamouda Mohamed Radhi · M1 SSI · USTHB</span>
+</footer>
+</body>
+</html>

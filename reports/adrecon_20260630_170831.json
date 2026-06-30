@@ -1,0 +1,1131 @@
+{
+  "meta": {
+    "target_dc": "192.168.100.10",
+    "domain": "corp.local",
+    "operator": "jsmith",
+    "timestamp": "2026-06-30T17:08:31.251445",
+    "total_users": 18,
+    "total_groups": 100,
+    "total_computers": 4,
+    "total_findings": 18,
+    "kerberoastable": 4,
+    "asrep_roastable": 0
+  },
+  "users": [
+    {
+      "username": "Administrateur",
+      "display_name": "",
+      "uac": 66048,
+      "uac_flags": [
+        "NO_EXPIRE"
+      ],
+      "admin_count": 1,
+      "spns": [],
+      "description": "Compte d\u2019utilisateur d\u2019administration"
+    },
+    {
+      "username": "Invit\u00e9",
+      "display_name": "",
+      "uac": 66082,
+      "uac_flags": [
+        "DISABLED",
+        "NO_EXPIRE"
+      ],
+      "admin_count": 0,
+      "spns": [],
+      "description": "Compte d\u2019utilisateur invit\u00e9"
+    },
+    {
+      "username": "DefaultAccount",
+      "display_name": "",
+      "uac": 66082,
+      "uac_flags": [
+        "DISABLED",
+        "NO_EXPIRE"
+      ],
+      "admin_count": 0,
+      "spns": [],
+      "description": "Compte utilisateur g\u00e9r\u00e9 par le syst\u00e8me."
+    },
+    {
+      "username": "DC01$",
+      "display_name": "",
+      "uac": 532480,
+      "uac_flags": [],
+      "admin_count": 0,
+      "spns": [
+        "Dfsr-12F9A27C-BF97-4787-9364-D31B6C55EB04/DC01.corp.local",
+        "ldap/DC01.corp.local/ForestDnsZones.corp.local",
+        "ldap/DC01.corp.local/DomainDnsZones.corp.local",
+        "DNS/DC01.corp.local",
+        "GC/DC01.corp.local/corp.local",
+        "RestrictedKrbHost/DC01.corp.local",
+        "RestrictedKrbHost/DC01",
+        "RPC/2ed76e74-74f4-45d0-88c4-7f7db6e91dbd._msdcs.corp.local",
+        "HOST/DC01/CORP",
+        "HOST/DC01.corp.local/CORP",
+        "HOST/DC01",
+        "HOST/DC01.corp.local",
+        "HOST/DC01.corp.local/corp.local",
+        "E3514235-4B06-11D1-AB04-00C04FC2DCD2/2ed76e74-74f4-45d0-88c4-7f7db6e91dbd/corp.local",
+        "ldap/DC01/CORP",
+        "ldap/2ed76e74-74f4-45d0-88c4-7f7db6e91dbd._msdcs.corp.local",
+        "ldap/DC01.corp.local/CORP",
+        "ldap/DC01",
+        "ldap/DC01.corp.local",
+        "ldap/DC01.corp.local/corp.local"
+      ],
+      "description": ""
+    },
+    {
+      "username": "krbtgt",
+      "display_name": "",
+      "uac": 514,
+      "uac_flags": [
+        "DISABLED"
+      ],
+      "admin_count": 1,
+      "spns": [
+        "kadmin/changepw"
+      ],
+      "description": "Compte de service du centre de distribution de cl\u00e9s"
+    },
+    {
+      "username": "jsmith",
+      "display_name": "",
+      "uac": 512,
+      "uac_flags": [],
+      "admin_count": 0,
+      "spns": [],
+      "description": ""
+    },
+    {
+      "username": "amartin",
+      "display_name": "",
+      "uac": 512,
+      "uac_flags": [],
+      "admin_count": 0,
+      "spns": [],
+      "description": ""
+    },
+    {
+      "username": "badmin",
+      "display_name": "",
+      "uac": 512,
+      "uac_flags": [],
+      "admin_count": 1,
+      "spns": [],
+      "description": ""
+    },
+    {
+      "username": "DESKTOP-77CHFAO$",
+      "display_name": "",
+      "uac": 4096,
+      "uac_flags": [],
+      "admin_count": 0,
+      "spns": [
+        "RestrictedKrbHost/DESKTOP-77CHFAO",
+        "HOST/DESKTOP-77CHFAO",
+        "RestrictedKrbHost/DESKTOP-77CHFAO.corp.local",
+        "HOST/DESKTOP-77CHFAO.corp.local"
+      ],
+      "description": ""
+    },
+    {
+      "username": "Administrateur",
+      "display_name": "",
+      "uac": 66048,
+      "uac_flags": [
+        "NO_EXPIRE"
+      ],
+      "admin_count": 1,
+      "spns": [],
+      "description": "Compte d\u2019utilisateur d\u2019administration"
+    },
+    {
+      "username": "Invit\u00e9",
+      "display_name": "",
+      "uac": 66082,
+      "uac_flags": [
+        "DISABLED",
+        "NO_EXPIRE"
+      ],
+      "admin_count": 0,
+      "spns": [],
+      "description": "Compte d\u2019utilisateur invit\u00e9"
+    },
+    {
+      "username": "DefaultAccount",
+      "display_name": "",
+      "uac": 66082,
+      "uac_flags": [
+        "DISABLED",
+        "NO_EXPIRE"
+      ],
+      "admin_count": 0,
+      "spns": [],
+      "description": "Compte utilisateur g\u00e9r\u00e9 par le syst\u00e8me."
+    },
+    {
+      "username": "DC01$",
+      "display_name": "",
+      "uac": 532480,
+      "uac_flags": [],
+      "admin_count": 0,
+      "spns": [
+        "Dfsr-12F9A27C-BF97-4787-9364-D31B6C55EB04/DC01.corp.local",
+        "ldap/DC01.corp.local/ForestDnsZones.corp.local",
+        "ldap/DC01.corp.local/DomainDnsZones.corp.local",
+        "DNS/DC01.corp.local",
+        "GC/DC01.corp.local/corp.local",
+        "RestrictedKrbHost/DC01.corp.local",
+        "RestrictedKrbHost/DC01",
+        "RPC/2ed76e74-74f4-45d0-88c4-7f7db6e91dbd._msdcs.corp.local",
+        "HOST/DC01/CORP",
+        "HOST/DC01.corp.local/CORP",
+        "HOST/DC01",
+        "HOST/DC01.corp.local",
+        "HOST/DC01.corp.local/corp.local",
+        "E3514235-4B06-11D1-AB04-00C04FC2DCD2/2ed76e74-74f4-45d0-88c4-7f7db6e91dbd/corp.local",
+        "ldap/DC01/CORP",
+        "ldap/2ed76e74-74f4-45d0-88c4-7f7db6e91dbd._msdcs.corp.local",
+        "ldap/DC01.corp.local/CORP",
+        "ldap/DC01",
+        "ldap/DC01.corp.local",
+        "ldap/DC01.corp.local/corp.local"
+      ],
+      "description": ""
+    },
+    {
+      "username": "krbtgt",
+      "display_name": "",
+      "uac": 514,
+      "uac_flags": [
+        "DISABLED"
+      ],
+      "admin_count": 1,
+      "spns": [
+        "kadmin/changepw"
+      ],
+      "description": "Compte de service du centre de distribution de cl\u00e9s"
+    },
+    {
+      "username": "jsmith",
+      "display_name": "",
+      "uac": 512,
+      "uac_flags": [],
+      "admin_count": 0,
+      "spns": [],
+      "description": ""
+    },
+    {
+      "username": "amartin",
+      "display_name": "",
+      "uac": 512,
+      "uac_flags": [],
+      "admin_count": 0,
+      "spns": [],
+      "description": ""
+    },
+    {
+      "username": "badmin",
+      "display_name": "",
+      "uac": 512,
+      "uac_flags": [],
+      "admin_count": 1,
+      "spns": [],
+      "description": ""
+    },
+    {
+      "username": "DESKTOP-77CHFAO$",
+      "display_name": "",
+      "uac": 4096,
+      "uac_flags": [],
+      "admin_count": 0,
+      "spns": [
+        "RestrictedKrbHost/DESKTOP-77CHFAO",
+        "HOST/DESKTOP-77CHFAO",
+        "RestrictedKrbHost/DESKTOP-77CHFAO.corp.local",
+        "HOST/DESKTOP-77CHFAO.corp.local"
+      ],
+      "description": ""
+    }
+  ],
+  "groups": [
+    {
+      "name": "Administrateurs",
+      "member_count": 3,
+      "members": [
+        "CN=Admins du domaine,CN=Users,DC=corp,DC=local",
+        "CN=Administrateurs de l\u2019entreprise,CN=Users,DC=corp,DC=local",
+        "CN=Administrateur,CN=Users,DC=corp,DC=local"
+      ],
+      "privileged": true
+    },
+    {
+      "name": "Utilisateurs",
+      "member_count": 3,
+      "members": [
+        "CN=Utilisateurs du domaine,CN=Users,DC=corp,DC=local",
+        "CN=S-1-5-11,CN=ForeignSecurityPrincipals,DC=corp,DC=local",
+        "CN=S-1-5-4,CN=ForeignSecurityPrincipals,DC=corp,DC=local"
+      ],
+      "privileged": false
+    },
+    {
+      "name": "Invit\u00e9s",
+      "member_count": 2,
+      "members": [
+        "CN=Invit\u00e9s du domaine,CN=Users,DC=corp,DC=local",
+        "CN=Invit\u00e9,CN=Users,DC=corp,DC=local"
+      ],
+      "privileged": false
+    },
+    {
+      "name": "Op\u00e9rateurs d\u2019impression",
+      "member_count": 0,
+      "members": [],
+      "privileged": true
+    },
+    {
+      "name": "Op\u00e9rateurs de sauvegarde",
+      "member_count": 0,
+      "members": [],
+      "privileged": true
+    },
+    {
+      "name": "Duplicateurs",
+      "member_count": 0,
+      "members": [],
+      "privileged": true
+    },
+    {
+      "name": "Utilisateurs du Bureau \u00e0 distance",
+      "member_count": 0,
+      "members": [],
+      "privileged": false
+    },
+    {
+      "name": "Op\u00e9rateurs de configuration r\u00e9seau",
+      "member_count": 0,
+      "members": [],
+      "privileged": false
+    },
+    {
+      "name": "Utilisateurs de l\u2019Analyseur de performances",
+      "member_count": 0,
+      "members": [],
+      "privileged": false
+    },
+    {
+      "name": "Utilisateurs du journal de performances",
+      "member_count": 0,
+      "members": [],
+      "privileged": false
+    },
+    {
+      "name": "Utilisateurs du mod\u00e8le COM distribu\u00e9",
+      "member_count": 0,
+      "members": [],
+      "privileged": false
+    },
+    {
+      "name": "IIS_IUSRS",
+      "member_count": 1,
+      "members": [
+        "CN=S-1-5-17,CN=ForeignSecurityPrincipals,DC=corp,DC=local"
+      ],
+      "privileged": false
+    },
+    {
+      "name": "Op\u00e9rateurs de chiffrement",
+      "member_count": 0,
+      "members": [],
+      "privileged": false
+    },
+    {
+      "name": "Lecteurs des journaux d\u2019\u00e9v\u00e9nements",
+      "member_count": 0,
+      "members": [],
+      "privileged": false
+    },
+    {
+      "name": "Acc\u00e8s DCOM service de certificats",
+      "member_count": 0,
+      "members": [],
+      "privileged": false
+    },
+    {
+      "name": "Serveurs Acc\u00e8s Distant RDS",
+      "member_count": 0,
+      "members": [],
+      "privileged": false
+    },
+    {
+      "name": "Serveurs RDS Endpoint",
+      "member_count": 0,
+      "members": [],
+      "privileged": false
+    },
+    {
+      "name": "Serveurs Gestion RDS",
+      "member_count": 0,
+      "members": [],
+      "privileged": false
+    },
+    {
+      "name": "Administrateurs Hyper-V",
+      "member_count": 0,
+      "members": [],
+      "privileged": false
+    },
+    {
+      "name": "Op\u00e9rateurs d'assistance de contr\u00f4le d'acc\u00e8s",
+      "member_count": 0,
+      "members": [],
+      "privileged": false
+    },
+    {
+      "name": "Utilisateurs de gestion \u00e0 distance",
+      "member_count": 0,
+      "members": [],
+      "privileged": false
+    },
+    {
+      "name": "System Managed Accounts Group",
+      "member_count": 1,
+      "members": [
+        "CN=DefaultAccount,CN=Users,DC=corp,DC=local"
+      ],
+      "privileged": false
+    },
+    {
+      "name": "Storage Replica Administrators",
+      "member_count": 0,
+      "members": [],
+      "privileged": false
+    },
+    {
+      "name": "Ordinateurs du domaine",
+      "member_count": 0,
+      "members": [],
+      "privileged": false
+    },
+    {
+      "name": "Contr\u00f4leurs de domaine",
+      "member_count": 0,
+      "members": [],
+      "privileged": true
+    },
+    {
+      "name": "Administrateurs du sch\u00e9ma",
+      "member_count": 1,
+      "members": [
+        "CN=Administrateur,CN=Users,DC=corp,DC=local"
+      ],
+      "privileged": true
+    },
+    {
+      "name": "Administrateurs de l\u2019entreprise",
+      "member_count": 1,
+      "members": [
+        "CN=Administrateur,CN=Users,DC=corp,DC=local"
+      ],
+      "privileged": true
+    },
+    {
+      "name": "\u00c9diteurs de certificats",
+      "member_count": 0,
+      "members": [],
+      "privileged": false
+    },
+    {
+      "name": "Admins du domaine",
+      "member_count": 2,
+      "members": [
+        "CN=Bob Admin,OU=Corp Admins,DC=corp,DC=local",
+        "CN=Administrateur,CN=Users,DC=corp,DC=local"
+      ],
+      "privileged": true
+    },
+    {
+      "name": "Utilisateurs du domaine",
+      "member_count": 0,
+      "members": [],
+      "privileged": false
+    },
+    {
+      "name": "Invit\u00e9s du domaine",
+      "member_count": 0,
+      "members": [],
+      "privileged": false
+    },
+    {
+      "name": "Propri\u00e9taires cr\u00e9ateurs de la strat\u00e9gie de groupe",
+      "member_count": 1,
+      "members": [
+        "CN=Administrateur,CN=Users,DC=corp,DC=local"
+      ],
+      "privileged": false
+    },
+    {
+      "name": "Serveurs RAS et IAS",
+      "member_count": 0,
+      "members": [],
+      "privileged": false
+    },
+    {
+      "name": "Op\u00e9rateurs de serveur",
+      "member_count": 0,
+      "members": [],
+      "privileged": true
+    },
+    {
+      "name": "Op\u00e9rateurs de compte",
+      "member_count": 0,
+      "members": [],
+      "privileged": true
+    },
+    {
+      "name": "Acc\u00e8s compatible pr\u00e9-Windows 2000",
+      "member_count": 1,
+      "members": [
+        "CN=S-1-5-11,CN=ForeignSecurityPrincipals,DC=corp,DC=local"
+      ],
+      "privileged": false
+    },
+    {
+      "name": "G\u00e9n\u00e9rateurs d\u2019approbations de for\u00eat entrante",
+      "member_count": 0,
+      "members": [],
+      "privileged": false
+    },
+    {
+      "name": "Groupe d\u2019acc\u00e8s d\u2019autorisation Windows",
+      "member_count": 1,
+      "members": [
+        "CN=S-1-5-9,CN=ForeignSecurityPrincipals,DC=corp,DC=local"
+      ],
+      "privileged": false
+    },
+    {
+      "name": "Serveurs de licences des services Terminal Server",
+      "member_count": 0,
+      "members": [],
+      "privileged": false
+    },
+    {
+      "name": "Groupe de r\u00e9plication dont le mot de passe RODC est autoris\u00e9",
+      "member_count": 0,
+      "members": [],
+      "privileged": false
+    },
+    {
+      "name": "Groupe de r\u00e9plication dont le mot de passe RODC est refus\u00e9",
+      "member_count": 8,
+      "members": [
+        "CN=Contr\u00f4leurs de domaine en lecture seule,CN=Users,DC=corp,DC=local",
+        "CN=Propri\u00e9taires cr\u00e9ateurs de la strat\u00e9gie de groupe,CN=Users,DC=corp,DC=local",
+        "CN=Admins du domaine,CN=Users,DC=corp,DC=local",
+        "CN=\u00c9diteurs de certificats,CN=Users,DC=corp,DC=local",
+        "CN=Administrateurs de l\u2019entreprise,CN=Users,DC=corp,DC=local",
+        "CN=Administrateurs du sch\u00e9ma,CN=Users,DC=corp,DC=local",
+        "CN=Contr\u00f4leurs de domaine,CN=Users,DC=corp,DC=local",
+        "CN=krbtgt,CN=Users,DC=corp,DC=local"
+      ],
+      "privileged": false
+    },
+    {
+      "name": "Contr\u00f4leurs de domaine en lecture seule",
+      "member_count": 0,
+      "members": [],
+      "privileged": true
+    },
+    {
+      "name": "Contr\u00f4leurs de domaine d\u2019entreprise en lecture seule",
+      "member_count": 0,
+      "members": [],
+      "privileged": false
+    },
+    {
+      "name": "Contr\u00f4leurs de domaine clonables",
+      "member_count": 0,
+      "members": [],
+      "privileged": false
+    },
+    {
+      "name": "Protected Users",
+      "member_count": 0,
+      "members": [],
+      "privileged": false
+    },
+    {
+      "name": "Administrateurs cl\u00e9s",
+      "member_count": 0,
+      "members": [],
+      "privileged": false
+    },
+    {
+      "name": "Administrateurs cl\u00e9s Enterprise",
+      "member_count": 0,
+      "members": [],
+      "privileged": false
+    },
+    {
+      "name": "DnsAdmins",
+      "member_count": 0,
+      "members": [],
+      "privileged": false
+    },
+    {
+      "name": "DnsUpdateProxy",
+      "member_count": 0,
+      "members": [],
+      "privileged": false
+    },
+    {
+      "name": "IT Staff",
+      "member_count": 2,
+      "members": [
+        "CN=Alice Martin,OU=Corp Users,DC=corp,DC=local",
+        "CN=John Smith,OU=Corp Users,DC=corp,DC=local"
+      ],
+      "privileged": false
+    },
+    {
+      "name": "Administrateurs",
+      "member_count": 3,
+      "members": [
+        "CN=Admins du domaine,CN=Users,DC=corp,DC=local",
+        "CN=Administrateurs de l\u2019entreprise,CN=Users,DC=corp,DC=local",
+        "CN=Administrateur,CN=Users,DC=corp,DC=local"
+      ],
+      "privileged": true
+    },
+    {
+      "name": "Utilisateurs",
+      "member_count": 3,
+      "members": [
+        "CN=Utilisateurs du domaine,CN=Users,DC=corp,DC=local",
+        "CN=S-1-5-11,CN=ForeignSecurityPrincipals,DC=corp,DC=local",
+        "CN=S-1-5-4,CN=ForeignSecurityPrincipals,DC=corp,DC=local"
+      ],
+      "privileged": false
+    },
+    {
+      "name": "Invit\u00e9s",
+      "member_count": 2,
+      "members": [
+        "CN=Invit\u00e9s du domaine,CN=Users,DC=corp,DC=local",
+        "CN=Invit\u00e9,CN=Users,DC=corp,DC=local"
+      ],
+      "privileged": false
+    },
+    {
+      "name": "Op\u00e9rateurs d\u2019impression",
+      "member_count": 0,
+      "members": [],
+      "privileged": true
+    },
+    {
+      "name": "Op\u00e9rateurs de sauvegarde",
+      "member_count": 0,
+      "members": [],
+      "privileged": true
+    },
+    {
+      "name": "Duplicateurs",
+      "member_count": 0,
+      "members": [],
+      "privileged": true
+    },
+    {
+      "name": "Utilisateurs du Bureau \u00e0 distance",
+      "member_count": 0,
+      "members": [],
+      "privileged": false
+    },
+    {
+      "name": "Op\u00e9rateurs de configuration r\u00e9seau",
+      "member_count": 0,
+      "members": [],
+      "privileged": false
+    },
+    {
+      "name": "Utilisateurs de l\u2019Analyseur de performances",
+      "member_count": 0,
+      "members": [],
+      "privileged": false
+    },
+    {
+      "name": "Utilisateurs du journal de performances",
+      "member_count": 0,
+      "members": [],
+      "privileged": false
+    },
+    {
+      "name": "Utilisateurs du mod\u00e8le COM distribu\u00e9",
+      "member_count": 0,
+      "members": [],
+      "privileged": false
+    },
+    {
+      "name": "IIS_IUSRS",
+      "member_count": 1,
+      "members": [
+        "CN=S-1-5-17,CN=ForeignSecurityPrincipals,DC=corp,DC=local"
+      ],
+      "privileged": false
+    },
+    {
+      "name": "Op\u00e9rateurs de chiffrement",
+      "member_count": 0,
+      "members": [],
+      "privileged": false
+    },
+    {
+      "name": "Lecteurs des journaux d\u2019\u00e9v\u00e9nements",
+      "member_count": 0,
+      "members": [],
+      "privileged": false
+    },
+    {
+      "name": "Acc\u00e8s DCOM service de certificats",
+      "member_count": 0,
+      "members": [],
+      "privileged": false
+    },
+    {
+      "name": "Serveurs Acc\u00e8s Distant RDS",
+      "member_count": 0,
+      "members": [],
+      "privileged": false
+    },
+    {
+      "name": "Serveurs RDS Endpoint",
+      "member_count": 0,
+      "members": [],
+      "privileged": false
+    },
+    {
+      "name": "Serveurs Gestion RDS",
+      "member_count": 0,
+      "members": [],
+      "privileged": false
+    },
+    {
+      "name": "Administrateurs Hyper-V",
+      "member_count": 0,
+      "members": [],
+      "privileged": false
+    },
+    {
+      "name": "Op\u00e9rateurs d'assistance de contr\u00f4le d'acc\u00e8s",
+      "member_count": 0,
+      "members": [],
+      "privileged": false
+    },
+    {
+      "name": "Utilisateurs de gestion \u00e0 distance",
+      "member_count": 0,
+      "members": [],
+      "privileged": false
+    },
+    {
+      "name": "System Managed Accounts Group",
+      "member_count": 1,
+      "members": [
+        "CN=DefaultAccount,CN=Users,DC=corp,DC=local"
+      ],
+      "privileged": false
+    },
+    {
+      "name": "Storage Replica Administrators",
+      "member_count": 0,
+      "members": [],
+      "privileged": false
+    },
+    {
+      "name": "Ordinateurs du domaine",
+      "member_count": 0,
+      "members": [],
+      "privileged": false
+    },
+    {
+      "name": "Contr\u00f4leurs de domaine",
+      "member_count": 0,
+      "members": [],
+      "privileged": true
+    },
+    {
+      "name": "Administrateurs du sch\u00e9ma",
+      "member_count": 1,
+      "members": [
+        "CN=Administrateur,CN=Users,DC=corp,DC=local"
+      ],
+      "privileged": true
+    },
+    {
+      "name": "Administrateurs de l\u2019entreprise",
+      "member_count": 1,
+      "members": [
+        "CN=Administrateur,CN=Users,DC=corp,DC=local"
+      ],
+      "privileged": true
+    },
+    {
+      "name": "\u00c9diteurs de certificats",
+      "member_count": 0,
+      "members": [],
+      "privileged": false
+    },
+    {
+      "name": "Admins du domaine",
+      "member_count": 2,
+      "members": [
+        "CN=Bob Admin,OU=Corp Admins,DC=corp,DC=local",
+        "CN=Administrateur,CN=Users,DC=corp,DC=local"
+      ],
+      "privileged": true
+    },
+    {
+      "name": "Utilisateurs du domaine",
+      "member_count": 0,
+      "members": [],
+      "privileged": false
+    },
+    {
+      "name": "Invit\u00e9s du domaine",
+      "member_count": 0,
+      "members": [],
+      "privileged": false
+    },
+    {
+      "name": "Propri\u00e9taires cr\u00e9ateurs de la strat\u00e9gie de groupe",
+      "member_count": 1,
+      "members": [
+        "CN=Administrateur,CN=Users,DC=corp,DC=local"
+      ],
+      "privileged": false
+    },
+    {
+      "name": "Serveurs RAS et IAS",
+      "member_count": 0,
+      "members": [],
+      "privileged": false
+    },
+    {
+      "name": "Op\u00e9rateurs de serveur",
+      "member_count": 0,
+      "members": [],
+      "privileged": true
+    },
+    {
+      "name": "Op\u00e9rateurs de compte",
+      "member_count": 0,
+      "members": [],
+      "privileged": true
+    },
+    {
+      "name": "Acc\u00e8s compatible pr\u00e9-Windows 2000",
+      "member_count": 1,
+      "members": [
+        "CN=S-1-5-11,CN=ForeignSecurityPrincipals,DC=corp,DC=local"
+      ],
+      "privileged": false
+    },
+    {
+      "name": "G\u00e9n\u00e9rateurs d\u2019approbations de for\u00eat entrante",
+      "member_count": 0,
+      "members": [],
+      "privileged": false
+    },
+    {
+      "name": "Groupe d\u2019acc\u00e8s d\u2019autorisation Windows",
+      "member_count": 1,
+      "members": [
+        "CN=S-1-5-9,CN=ForeignSecurityPrincipals,DC=corp,DC=local"
+      ],
+      "privileged": false
+    },
+    {
+      "name": "Serveurs de licences des services Terminal Server",
+      "member_count": 0,
+      "members": [],
+      "privileged": false
+    },
+    {
+      "name": "Groupe de r\u00e9plication dont le mot de passe RODC est autoris\u00e9",
+      "member_count": 0,
+      "members": [],
+      "privileged": false
+    },
+    {
+      "name": "Groupe de r\u00e9plication dont le mot de passe RODC est refus\u00e9",
+      "member_count": 8,
+      "members": [
+        "CN=Contr\u00f4leurs de domaine en lecture seule,CN=Users,DC=corp,DC=local",
+        "CN=Propri\u00e9taires cr\u00e9ateurs de la strat\u00e9gie de groupe,CN=Users,DC=corp,DC=local",
+        "CN=Admins du domaine,CN=Users,DC=corp,DC=local",
+        "CN=\u00c9diteurs de certificats,CN=Users,DC=corp,DC=local",
+        "CN=Administrateurs de l\u2019entreprise,CN=Users,DC=corp,DC=local",
+        "CN=Administrateurs du sch\u00e9ma,CN=Users,DC=corp,DC=local",
+        "CN=Contr\u00f4leurs de domaine,CN=Users,DC=corp,DC=local",
+        "CN=krbtgt,CN=Users,DC=corp,DC=local"
+      ],
+      "privileged": false
+    },
+    {
+      "name": "Contr\u00f4leurs de domaine en lecture seule",
+      "member_count": 0,
+      "members": [],
+      "privileged": true
+    },
+    {
+      "name": "Contr\u00f4leurs de domaine d\u2019entreprise en lecture seule",
+      "member_count": 0,
+      "members": [],
+      "privileged": false
+    },
+    {
+      "name": "Contr\u00f4leurs de domaine clonables",
+      "member_count": 0,
+      "members": [],
+      "privileged": false
+    },
+    {
+      "name": "Protected Users",
+      "member_count": 0,
+      "members": [],
+      "privileged": false
+    },
+    {
+      "name": "Administrateurs cl\u00e9s",
+      "member_count": 0,
+      "members": [],
+      "privileged": false
+    },
+    {
+      "name": "Administrateurs cl\u00e9s Enterprise",
+      "member_count": 0,
+      "members": [],
+      "privileged": false
+    },
+    {
+      "name": "DnsAdmins",
+      "member_count": 0,
+      "members": [],
+      "privileged": false
+    },
+    {
+      "name": "DnsUpdateProxy",
+      "member_count": 0,
+      "members": [],
+      "privileged": false
+    },
+    {
+      "name": "IT Staff",
+      "member_count": 2,
+      "members": [
+        "CN=Alice Martin,OU=Corp Users,DC=corp,DC=local",
+        "CN=John Smith,OU=Corp Users,DC=corp,DC=local"
+      ],
+      "privileged": false
+    }
+  ],
+  "computers": [
+    {
+      "name": "DC01$",
+      "os": "Windows Server 2016 Standard Evaluation",
+      "dns": "DC01.corp.local"
+    },
+    {
+      "name": "DESKTOP-77CHFAO$",
+      "os": "Windows 10 Pro",
+      "dns": "DESKTOP-77CHFAO.corp.local"
+    },
+    {
+      "name": "DC01$",
+      "os": "Windows Server 2016 Standard Evaluation",
+      "dns": "DC01.corp.local"
+    },
+    {
+      "name": "DESKTOP-77CHFAO$",
+      "os": "Windows 10 Pro",
+      "dns": "DESKTOP-77CHFAO.corp.local"
+    }
+  ],
+  "kerberoastable": [
+    "DC01$",
+    "DESKTOP-77CHFAO$",
+    "DC01$",
+    "DESKTOP-77CHFAO$"
+  ],
+  "asrep_roastable": [],
+  "admin_users": [
+    "Administrateur",
+    "krbtgt",
+    "badmin",
+    "Administrateur",
+    "krbtgt",
+    "badmin"
+  ],
+  "findings": [
+    {
+      "severity": "HIGH",
+      "title": "Kerberoastable Account",
+      "description": "User 'DC01$' has SPNs set \u2014 vulnerable to Kerberoasting",
+      "affected": [
+        "DC01$"
+      ],
+      "timestamp": "2026-06-30T17:08:23.488166"
+    },
+    {
+      "severity": "HIGH",
+      "title": "Kerberoastable Account",
+      "description": "User 'DESKTOP-77CHFAO$' has SPNs set \u2014 vulnerable to Kerberoasting",
+      "affected": [
+        "DESKTOP-77CHFAO$"
+      ],
+      "timestamp": "2026-06-30T17:08:23.490098"
+    },
+    {
+      "severity": "MEDIUM",
+      "title": "Privileged Group: Administrateurs",
+      "description": "Group 'Administrateurs' has 3 member(s)",
+      "affected": [
+        "Admins du domaine",
+        "Administrateurs de l\u2019entreprise",
+        "Administrateur"
+      ],
+      "timestamp": "2026-06-30T17:08:23.521210"
+    },
+    {
+      "severity": "MEDIUM",
+      "title": "Privileged Group: Administrateurs du sch\u00e9ma",
+      "description": "Group 'Administrateurs du sch\u00e9ma' has 1 member(s)",
+      "affected": [
+        "Administrateur"
+      ],
+      "timestamp": "2026-06-30T17:08:23.521897"
+    },
+    {
+      "severity": "MEDIUM",
+      "title": "Privileged Group: Administrateurs de l\u2019entreprise",
+      "description": "Group 'Administrateurs de l\u2019entreprise' has 1 member(s)",
+      "affected": [
+        "Administrateur"
+      ],
+      "timestamp": "2026-06-30T17:08:23.521927"
+    },
+    {
+      "severity": "MEDIUM",
+      "title": "Privileged Group: Admins du domaine",
+      "description": "Group 'Admins du domaine' has 2 member(s)",
+      "affected": [
+        "Bob Admin",
+        "Administrateur"
+      ],
+      "timestamp": "2026-06-30T17:08:23.521960"
+    },
+    {
+      "severity": "MEDIUM",
+      "title": "Weak Password Policy: Min Password Length",
+      "description": "Min Password Length is set to 7",
+      "affected": [],
+      "timestamp": "2026-06-30T17:08:23.572603"
+    },
+    {
+      "severity": "MEDIUM",
+      "title": "Weak Password Policy: Lockout Threshold",
+      "description": "Lockout Threshold is set to 0",
+      "affected": [],
+      "timestamp": "2026-06-30T17:08:23.572870"
+    },
+    {
+      "severity": "INFO",
+      "title": "Admin Share Check",
+      "description": "Manual verification recommended with crackmapexec or smbclient",
+      "affected": [],
+      "timestamp": "2026-06-30T17:08:23.584297"
+    },
+    {
+      "severity": "HIGH",
+      "title": "Kerberoastable Account",
+      "description": "User 'DC01$' has SPNs set \u2014 vulnerable to Kerberoasting",
+      "affected": [
+        "DC01$"
+      ],
+      "timestamp": "2026-06-30T17:08:31.159180"
+    },
+    {
+      "severity": "HIGH",
+      "title": "Kerberoastable Account",
+      "description": "User 'DESKTOP-77CHFAO$' has SPNs set \u2014 vulnerable to Kerberoasting",
+      "affected": [
+        "DESKTOP-77CHFAO$"
+      ],
+      "timestamp": "2026-06-30T17:08:31.159533"
+    },
+    {
+      "severity": "MEDIUM",
+      "title": "Privileged Group: Administrateurs",
+      "description": "Group 'Administrateurs' has 3 member(s)",
+      "affected": [
+        "Admins du domaine",
+        "Administrateurs de l\u2019entreprise",
+        "Administrateur"
+      ],
+      "timestamp": "2026-06-30T17:08:31.191325"
+    },
+    {
+      "severity": "MEDIUM",
+      "title": "Privileged Group: Administrateurs du sch\u00e9ma",
+      "description": "Group 'Administrateurs du sch\u00e9ma' has 1 member(s)",
+      "affected": [
+        "Administrateur"
+      ],
+      "timestamp": "2026-06-30T17:08:31.191734"
+    },
+    {
+      "severity": "MEDIUM",
+      "title": "Privileged Group: Administrateurs de l\u2019entreprise",
+      "description": "Group 'Administrateurs de l\u2019entreprise' has 1 member(s)",
+      "affected": [
+        "Administrateur"
+      ],
+      "timestamp": "2026-06-30T17:08:31.191759"
+    },
+    {
+      "severity": "MEDIUM",
+      "title": "Privileged Group: Admins du domaine",
+      "description": "Group 'Admins du domaine' has 2 member(s)",
+      "affected": [
+        "Bob Admin",
+        "Administrateur"
+      ],
+      "timestamp": "2026-06-30T17:08:31.191793"
+    },
+    {
+      "severity": "MEDIUM",
+      "title": "Weak Password Policy: Min Password Length",
+      "description": "Min Password Length is set to 7",
+      "affected": [],
+      "timestamp": "2026-06-30T17:08:31.237999"
+    },
+    {
+      "severity": "MEDIUM",
+      "title": "Weak Password Policy: Lockout Threshold",
+      "description": "Lockout Threshold is set to 0",
+      "affected": [],
+      "timestamp": "2026-06-30T17:08:31.238021"
+    },
+    {
+      "severity": "INFO",
+      "title": "Admin Share Check",
+      "description": "Manual verification recommended with crackmapexec or smbclient",
+      "affected": [],
+      "timestamp": "2026-06-30T17:08:31.249949"
+    }
+  ]
+}
